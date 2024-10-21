@@ -1,0 +1,47 @@
+@import "../vendor/bootstrap/css/bootstrap-grid";
+@import "components/breakpoints";
+@import "variables"; /* Colors, Fonts(incl. @import), Header height */
+@import "components/defaults"; /* Helper, Voreinstellungen */
+@import "components/font-styles"; /* Colors, font-size, etc... */
+@import "components/gdpr"; /* GDPR */
+
+@import "components/buttons";
+@import "components/hero-slider";
+@import "components/hero-stoerer";
+
+@import "components/hamburger";
+@import "components/metismenu";
+//@import "components/fullscreenmenu";
+@import "components/off-canvas-menu";
+@import "components/page-navigation";
+
+@import "components/header";
+@import "components/footer";
+
+@import "components/datenschutz";
+@import "components/content"; /* Blog, Article, Breadcrumbs */
+@import "components/sigplus";
+@import "components/tables";
+@import "components/cards";
+@import "components/sections";
+@import "components/teaser";
+@import "components/forms";
+@import "components/counter-row";
+
+// Modules
+@import "modules/mod-breadcrumbs";
+@import "modules/historie";
+@import "modules/mod-newsflash-leistungen";
+@import "modules/mod-newsflash-referenzen-sportplatzbau";
+
+@import "components/media-query"; /* Für Entwicklung */
+
+body {
+  padding-top: var(--header-height);
+  background: var(--color-snow-white);
+}
+
+#site-wrapper {
+  background: var(--color-white);
+}
+

@@ -1,0 +1,58 @@
+.com-users-login,
+.com-users-profile,
+.com-users-profile__edit,
+.com-users-reset,
+.com-users-remin,
+.com-users-logout{
+  @extend .container;
+  margin-top: 160px;
+
+  fieldset{
+    padding: 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    fieldset{
+      padding: 30px 15px;
+    }
+  }
+}
+
+
+.com-users-login{
+
+  .com-users-login__remember {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  #remember {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .plg_system_webauthn_login_button{
+    display: none;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .input-password-toggle {
+    background: #222;
+  }
+
+  @include media-breakpoint-down(md) {
+    fieldset{
+      padding: 30px 15px;
+    }
+  }
+
+}
+
+.com-users-login__options > a {
+  display: block;
+}
+

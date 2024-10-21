@@ -1,0 +1,80 @@
+.mod-custom.stoerer {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+
+  #stoerer-hero-top {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 30;
+
+    .stoerer-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .stoerer-item {
+    color: #fff !important;
+    position: relative;
+    margin-left: -80px;
+
+    transform: translateX(calc(100% - 70px));
+    transition: transform 0.3s ease-in;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: var(--color-grey-dark);
+      svg {
+        color: #fff;
+      }
+      @include media-breakpoint-up(md) {
+        transform: translateX(0);
+      }
+    }
+
+    .before {
+      position: absolute;
+      right: 215px;
+      bottom: 0;
+      font-family: var(--font-family-headings);
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    a {
+      background-color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      padding-right: 14px;
+
+      span {
+        order: 2;
+        margin-left: 10px;
+        display: inline-block;
+        color: #fff;
+      }
+    }
+    img,
+    svg {
+      order: 1;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  #stoerer-linkedin a {
+    background-color: #0e76a8;
+    svg {
+      padding: 8px;
+    }
+  }
+
+  #stoerer-kontakt {
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    right: 0;
+  }
+}

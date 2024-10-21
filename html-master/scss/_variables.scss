@@ -1,0 +1,98 @@
+/*
+  Fonts
+*/
+//@import "fonts/montserrat-alternates";
+//@import "fonts/exo2";
+//@import "fonts/oswald";
+//@import "fonts/opensans";
+
+@import "fonts/fjalla-one";
+@import "fonts/roboto";
+
+:root {
+  --font-family-base: "Roboto", sans-serif;
+  --font-family-headings: "Fjalla One", sans-serif;
+  --font-weight-headings: 300;
+  --font-weight-normal: 400;
+  --font-size-small: 0.85rem;
+}
+
+:root {
+  // Template Colors
+  --color-primary: var(--color-orange);
+  --color-secondary: var(--color-grey-dark);
+  --color-text: #222;
+  --color-headings: var(--color-text);
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-primary);
+
+  --color-header: var(--color-white);
+  --color-bg-header: var(--color-white);
+  --color-footer: var(--color-white);
+  --color-bg-footer: var(--color-grey-darker);
+  --color-footer: var(--color-white);
+
+  // menu
+  --color-link-mainmenu: var(--color-white);
+  --color-link-mainmenu-hover: var(--color-white);
+  --color-bg-link-mainmenu-hover: var(--color-primary);
+
+  // Hamburger
+  --color-bg-hamburger-outer: transparent;
+  --color-bg-hamburger: var(--color-text);
+  --color-bg-hamburger-hover: var(--color-text);
+  --color-hamburger-link: var(--color-text);
+  --color-hamburger-link-hover: var(--color-text);
+  --color-hamburger-label: var(--color-text);
+
+  // GDPR
+  --bgcolor-gdpr: var(--color-primary);
+  --color-gdpr-text: var(--color-black);
+  --color-gdpr-link: #666;
+  --bgcolor-gdpr-deny: #999;
+  --bgcolor-gdpr-allow: var(--color-grey-dark);
+  --bgcolor-gdpr-allow-all: var(--color-green);
+
+  // Gradients
+  --gradient-white-grey: linear-gradient(to right, #fff, #e2e3e5);
+
+  // Colors
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-snow-white: #f5f5f5;
+  --color-grey: #9c9c9c;
+  --color-grey-light: #eee;
+  --color-grey-dark: #85868a;
+  --color-grey-darker: #2a2c2b;
+  --color-red: #e51b1f;
+  --color-yellow: #feda00;
+  --color-green: #008676;
+  --color-green-light: #b5d343;
+  --color-green-lighter: #d7e998;
+  --color-blue-dark: #27275b;
+  --color-blue: #0061a8;
+  --color-blue-light: #2db4e6;
+  --color-lila: #76216b;
+  --color-magenta: #e6007e;
+  --color-orange: #E84E0F;
+  --color-brown: #845e42;
+
+  // Width, Height, Gutter
+  --body-width: 2000px;
+  --gutter-x: 15px;
+  --gutter-y: 15px;
+
+  --header-height: 80px;
+  --height-100vh: calc(100vh - var(--header-height));
+}
+
+// classes
+.small {
+  font-size: var(--font-size-small);
+}
+.bg-red {
+  background-color: var(--color-red);
+}
+.bg-grey-light {
+  background-color: var(--color-grey-light);
+}

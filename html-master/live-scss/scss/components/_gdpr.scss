@@ -1,0 +1,237 @@
+/*
+  Popup Datenschutz/Cookie-Richtlinie
+*/
+div.cc-window.cc-floating {
+  width: 630px;
+  max-width: 100%;
+  line-height: 1.3;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media (max-width: 639px) {
+  div.cc-window.cc-floating:not(.cc-center) {
+    max-width: 100%;
+  }
+}
+div.cc-window.cc-floating div.cc-settings-label {
+  opacity: 1;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.cc-header {
+  display: block;
+  max-width: 100%;
+  margin-bottom: -8px;
+}
+.cc-floating .cc-message {
+  margin-bottom: 6px;
+}
+.cc-floating > .cc-link {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1px;
+  margin-bottom: 24px;
+}
+.cc-floating > .cc-link:first-of-type {
+  margin-right: 10px;
+}
+
+div.cc-checkboxes-container a:not(.cc-btn) {
+  margin-right: 15px;
+  padding-right: 15px;
+  padding-left: 5px;
+  line-height: 1;
+}
+div.cc-checkboxes-container a:not(.cc-btn) {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.cc-highlight .cc-btn:first-child:focus,
+.cc-highlight .cc-btn:first-child:hover {
+  text-decoration: none;
+}
+.cc-revoke.cc-bottom {
+  border-radius: 0;
+  padding: 10px;
+}
+.component-page {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.component-page .cc-custom-revoke {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+}
+table.bordered {
+  border: 1px solid #dee2e6;
+}
+table.bordered td {
+  padding: 5px;
+  border: 1px solid #dee2e6;
+}
+
+/* Individuell optout */
+fieldset.cc-cookie-list-title .gdpr_cookie_switcher label.gdpr_onoffswitch-label {
+  height: 30px;
+}
+fieldset.cc-cookie-list-title .gdpr_cookie_switcher span.gdpr_onoffswitch-inner::after,
+fieldset.cc-cookie-list-title .gdpr_cookie_switcher span.gdpr_onoffswitch-inner::before {
+  line-height: 21px;
+}
+fieldset.cc-cookie-list-title .gdpr_onoffswitch-switch {
+  top: 10px;
+  right: 3px;
+}
+fieldset.cc-cookie-list-title div.gdpr_cookie_switcher.inactive span.gdpr_onoffswitch-inner::before,
+fieldset.cc-cookie-list-title div.gdpr_cookie_switcher.inactive span.gdpr_onoffswitch-inner::after {
+  background: #008000;
+}
+fieldset.cc-cookie-list-title div.gdpr_cookie_switcher.inactive.disabled span.gdpr_onoffswitch-inner::before,
+fieldset.cc-cookie-list-title div.gdpr_cookie_switcher.inactive.disabled span.gdpr_onoffswitch-inner::after {
+  background: #d0d0d0;
+}
+.cc-custom-revoke {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cc-custom-revoke:hover {
+  text-decoration: underline;
+}
+.cc-revoke,
+.cc-window {
+  font-family: "Open Sans", sans-serif;
+}
+.cc-window.cc-floating {
+  display: block;
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transition: 0.1s ease-in, -webkit-transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s 0.1s ease-in;
+  transition: -webkit-transform 0.4s 0.1s ease-in;
+  transition: transform 0.4s 0.1s ease-in;
+  transition: transform 0.4s 0.1s ease-in, -webkit-transform 0.4s 0.1s ease-in;
+}
+.cc-window.cc-floating.cc-invisible {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translateY(110%);
+  transform: translateY(110%);
+  -webkit-transition: 0.1s ease-in, -webkit-transform 0.4s;
+}
+/* Button ablehnen */
+.cc-btn.cc-deny {
+  display: none;
+}
+
+div.gdprlock-placeholder-text,
+div.gdprcookielock-placeholder-text {
+  font-size: 16px;
+}
+div.gdprlock-placeholder.gdprlock-placeholder-action {
+  margin-top: 20px;
+}
+
+.fancybox-content {
+  padding: 15px;
+}
+
+/*
+  Cookie-Hinweis
+*/
+body .cc-window.cc-floating {
+  background: var(--bgcolor-gdpr);
+  max-width: 100% !important;
+  width: 600px;
+  font-family: var(--font-family-base);
+  line-height: 1.3;
+
+  .cc-header,
+  .cc-settings-label {
+    font-family: var(--font-family-headings);
+    color: var(--color-gdpr-text);
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .cc-link {
+    margin: 0;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: none;
+    color: var(--color-gdpr-link);
+  }
+
+  .cc-compliance {
+    margin-top: 15px;
+  }
+
+  .cc-checkboxes-container {
+    margin-top: 20px;
+  }
+
+  .cc-settings-label {
+    opacity: 1;
+    margin-bottom: 15px !important;
+  }
+
+  .cc-checkbox-container {
+    a {
+      border: none !important;
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+  }
+
+  .cc-highlight {
+    .cc-btn.cc-deny {
+      background: var(--bgcolor-gdpr-deny);
+    }
+    .cc-allow {
+      background: var(--bgcolor-gdpr-allow) !important;
+    }
+    .cc-allow-all {
+      background: var(--bgcolor-gdpr-allow-all) !important;
+    }
+  }
+}
+
+.cc-custom-revoke {
+  cursor: pointer;
+}
+
+/*
+  Placeholder
+*/
+.site-grid .gdprlock-placeholder,
+.site-grid .gdprcookielock-placeholder {
+  border-radius: 24px;
+  background: var(--color-green-light);
+  margin-top: 60px;
+
+  div.gdprlock-placeholder-text,
+  div.gdprcookielock-placeholder-text {
+    font-size: 1.2rem;
+    color: #fff;
+    .link {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--color-lila);
+      transition: color 0.5s;
+
+      &:hover {
+        color: var(--color-lila);
+      }
+    }
+  }
+}

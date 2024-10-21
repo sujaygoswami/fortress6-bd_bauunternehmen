@@ -1,62 +1,47 @@
-.js-hidden,
-.js-invisible {
-    visibility: hidden !important
+// @import "../vendor/bootstrap/css/bootstrap-grid";
+@import "components/breakpoints";
+@import "variables"; /* Colors, Fonts(incl. @import), Header height */
+@import "components/defaults"; /* Helper, Voreinstellungen */
+@import "components/font-styles"; /* Colors, font-size, etc... */
+@import "components/gdpr"; /* GDPR */
+
+@import "components/buttons";
+@import "components/hero-slider";
+@import "components/hero-stoerer";
+
+@import "components/hamburger";
+@import "components/metismenu";
+//@import "components/fullscreenmenu";
+@import "components/off-canvas-menu";
+@import "components/page-navigation";
+
+@import "components/header";
+@import "components/footer";
+
+@import "components/datenschutz";
+@import "components/content"; /* Blog, Article, Breadcrumbs */
+@import "components/sigplus";
+@import "components/tables";
+@import "components/cards";
+@import "components/sections";
+@import "components/teaser";
+@import "components/forms";
+@import "components/counter-row";
+
+// Modules
+@import "modules/mod-breadcrumbs";
+@import "modules/historie";
+@import "modules/mod-newsflash-leistungen";
+@import "modules/mod-newsflash-referenzen-sportplatzbau";
+
+@import "components/media-query"; /* Für Entwicklung */
+
+body {
+  padding-top: var(--header-height);
+  background: var(--color-snow-white);
 }
 
-.js-clearfix:after,
-.js-clearfix:before {
-    display: table;
-    content: "";
-    line-height: 0
+#site-wrapper {
+  background: var(--color-white);
 }
 
-.js-clearfix:after {
-    clear: both
-}
-
-.js-responsive-frame {
-    width: 100%
-}
-
-@media (min-width:960px) {
-
-    .js-hidden-large,
-    .js-visible-medium,
-    .js-visible-small {
-        display: none !important
-    }
-}
-
-@media (min-width:768px) and (max-width:959px) {
-
-    .js-hidden-medium,
-    .js-visible-large,
-    .js-visible-small {
-        display: none !important
-    }
-}
-
-@media (max-width:767px) {
-
-    .js-hidden-small,
-    .js-visible-large,
-    .js-visible-medium {
-        display: none !important
-    }
-}
-
-.js-hidden {
-    display: none !important
-}
-
-.js-visible-hover:hover .js-hidden,
-.js-visible-hover:hover .js-invisible {
-    display: block !important;
-    visibility: visible !important
-}
-
-.js-visible-hover-inline:hover .js-hidden,
-.js-visible-hover-inline:hover .js-invisible {
-    display: inline-block !important;
-    visibility: visible !important
-}

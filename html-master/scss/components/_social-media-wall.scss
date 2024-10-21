@@ -1,0 +1,134 @@
+/* from zebo */
+.sb-foot, .sboard .sb-item .sb-inner .sb-meta.item-likes, .sb-user, .sb-fetchcomments, .sb-title, .sb-search, .sb-child-media-true::before {
+    display: none !important;
+}
+
+.sb-inner {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0.5s;
+}
+
+.sb-container:hover .sb-inner {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+}
+
+.sb-text {
+    padding: 30px;
+}
+
+.sb-img {
+    border-radius: 0 !important;
+}
+
+body #timeline_wall1modern.sboard .origin-flag.sb-facebook, body #timeline_wall1modern.sboard .origin-flag.sb-instagram {
+    background-color: transparent !important;
+    bottom: 0 !important;
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+body #timeline_wall1modern.sboard .origin-flag.sb-facebook::after, body #timeline_wall1modern.sboard .origin-flag.sb-instagram::after {
+    border-left: none !important;
+}
+
+.sb-metadata {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px !important;
+}
+
+.comments {
+    display: none !important;
+}
+
+.likes{
+    font-size: 10pt !important;
+    font-weight: normal !important;
+}
+
+.sb-bico {
+    display: none !important;
+}
+
+.likes::before {
+    content: "\f164";
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-size: 14pt; 
+}
+
+
+#timeline_wall1modern.sboard.sb-modern, #timeline_wall1modern.sboard.sb-modern a {
+    font-size: 13px !important;
+}
+
+#timeline_wall1modern.sboard .sb-item .sb-container {
+    border: none !important;
+}
+
+.sb-hover {
+    background-color: #ececec !important;
+    border-color: #ececec !important;
+}
+
+#intro-112-items-0 .item-column-2:first-of-type {
+  background-position: center !important;
+}
+
+.sb-inner{
+	background: #435056 !important; //rgba(67, 80, 86, .9) !important;
+	color: #fff !important;
+	*{
+		color: #fff !important;
+	}
+}
+
+.sb-item .sb-thumb{
+	z-index: 2;
+	transition: opacity 0.3s;
+}
+
+.sb-item:hover{
+	.sb-thumb{
+		opacity: 0;
+	}
+}
+
+.sboard .sb-item .sb-thumb.sb-zoomin:hover a img{
+	transform: none !important;
+}
+
+#social-media-wall{
+  padding: 60px 0;
+}
+
+/* OW */
+.sb-loadmore, 
+.sb-loadshowmore{
+  margin: 15px 0;
+  padding: 0;
+  background: transparent;
+  text-align: center;
+  font-size: inherit;
+  &:hover,
+  &:focus{
+    background: transparent;
+  }
+
+}
+
+.sb-loadmore, 
+.sb-loadshowmore{
+  p{
+    @extend .btn-black;
+    padding: 14px 20px !important;
+    margin-top: 15px !important;
+    font-size: 1rem;    
+  }
+}

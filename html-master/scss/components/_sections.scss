@@ -1,0 +1,250 @@
+.section {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  //min-height: 400px;
+
+  > :not(.section-bg-image) {
+    z-index: 2;
+  }
+
+  &.dark {
+    color: var(--color-white);
+    h2,
+    h3,
+    h4,
+    p,
+    li,
+    span,
+    a,
+    a:hover,
+    a:focus,
+    td {
+      color: var(--color-white);
+    }
+  }
+
+  .section-bg-image {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    margin-top: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    .section-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      margin: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 30px;
+  }
+}
+
+body.is-home .section {
+  margin-bottom: 40px;
+}
+
+.section:not(.teaser) {
+  > .container {
+    > h3:first-of-type {
+      @extend .heading-lines;
+    }
+    > h3:first-of-type + h4 {
+      @extend .heading-1;
+    }
+  }
+}
+
+/*
+.is-home .section.ueber-uns {
+  @include media-breakpoint-down(md) {
+    .section-bg-image {
+      position: relative;
+      z-index: 1;
+      inset: inherit;
+      width: auto;
+      margin-top: -30px;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}
+*/
+
+.karriere-home {
+  min-height: 800px;
+  padding-bottom: 90px;
+  position: relative;
+
+  > .row {
+    background-color: #666;
+  }
+  > .row > div {
+    position: relative;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  h3 + h4 {
+    margin: 0;
+    font-size: 2.8rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    font-weight: normal;
+    width: 700px;
+    max-width: 96%;
+    font-family: var(--font-family-headings);
+    &::before {
+      display: none;
+    }
+    padding-left: 0;
+  }
+  li > a {
+    position: relative;
+    display: block;
+    background: var(--color-primary);
+    padding: 15px;
+    transition: background-color 0.4s ease;
+    &:hover {
+      background-color: var(--color-black);
+    }
+  }
+
+/*   
+  .section-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+ */
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    > .row {
+      background-color: transparent;
+    }
+    li {
+      position: relative;
+      padding-left: 0;
+    }
+
+    li::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      width: 30px;
+      background: var(--color-primary);
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+      transition: background-color 0.4s ease;
+    }
+
+    li:hover::after {
+      background-color: var(--color-black);
+    }
+  }
+
+  h3 + h4 {
+    font-size: 3rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 60px;
+    li {
+      font-size: 1.1rem;
+    }
+    h4 {
+      font-size: 1.8rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    h3 + h4 {
+      font-size: 4rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    li {
+      font-size: 1.2rem;
+    }
+    h3 + h4 {
+      font-size: 5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    h3 + h4 {
+      font-size: 6rem;
+    }
+  }
+}
+
+.section-einblicke {
+  color: var(--color-text);
+  padding-left: 0;
+  padding-right: 0;
+  h2 {
+    text-align: center;
+    color: var(--color-text);
+  }
+
+  .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+  }
+
+  @include media-breakpoint-up(md) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/* Über uns */
+.section.counter {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section.terras-group {
+  @include media-breakpoint-down(md) {
+    .section-bg-image {
+      display: none;
+    }
+  }
+}

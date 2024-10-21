@@ -1,0 +1,44 @@
+.galerie {
+  margin-top: 0;
+}
+
+.slideplus-viewport{
+  max-width: none;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+
+.slideplus-navigation {
+  display: none;
+}  
+
+.slideplus-slot {
+  @supports not (aspect-ratio: auto) {
+    contain: initial;
+    padding-bottom: 17%;
+  }
+}
+
+/*
+  No Slider, Layout flow
+*/
+.sigplus-gallery > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2px;
+  padding: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+  overflow: hidden;
+
+  > li {
+    flex: 0 0 50%;
+    @include media-breakpoint-up(sm) {
+      flex: 0 0 42%;
+    }
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 30%;
+    }
+  }
+}

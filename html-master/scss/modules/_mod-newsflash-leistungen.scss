@@ -1,0 +1,68 @@
+.mod-newsflash.leistungen {
+  padding-bottom: 30px;
+  h4 {
+    margin: 10px 0 10px;
+    color: var(--color-text);
+  }
+
+  .heading {
+    h3 {
+      @extend .heading-lines;
+    }
+    h4 {
+      @extend .heading-1;
+    }
+  }
+
+  .row {
+    margin-top: 40px;
+    align-items: stretch;
+  }
+  .row > div {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+    color: var(--color-text);
+    a {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      color: var(--color-text);
+      &:hover,
+      &:focus {
+        color: var(--color-text);
+      }
+    }
+   
+    .readmore {
+      margin: 0;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      .btn {
+        margin: 0;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.category-desc .mod-custom.leistungen-icons {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.is-home .mod-newsflash.leistungen,
+.view-category .mod-newsflash.leistungen, {
+  @include media-breakpoint-up(xl) {
+    .row > div {
+      width: 25%;
+    }
+  }
+}

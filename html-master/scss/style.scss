@@ -1,21 +1,30 @@
 
+// main template
+@import 'variables';
+@import 'frameworks';
+@import 'main';
+// @import 'offline';
+@import 'custom-css-typo3-ver';
+// main template
+
 
 @import 'animate';
 @import 'content';
 // @import 'cookieconsent';
 // @import 'fancybox';
 @import 'flyout';
-@import 'frameworks';
-@import 'inline';
+// @import 'inline';
 @import 'joomla-alert';
-@import 'main';
 @import 'sigplus';
 @import 'slick';
 @import 'slideplus';
 @import 'user';
-@import 'head-main';
+// @import 'head-main';
 @import 'flickity';
-@import 'custom-css-typo3-ver';
+
+
+
+
 
 
 

@@ -1,0 +1,28 @@
+.com-finder {
+  @extend .container;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  .js-finder-searchform {
+    margin: 40px 0;
+    > fieldset {
+      border: 1px solid var(--color-grey);
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .input-group {
+      margin-top: 15px;
+    }
+    .icon-search {
+      display: none;
+    }
+    .awesomplete {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .result__item + .result__item {
+    border-top: 1px solid var(--color-grey);
+  }
+}

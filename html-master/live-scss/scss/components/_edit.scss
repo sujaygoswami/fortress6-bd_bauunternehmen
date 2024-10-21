@@ -1,0 +1,119 @@
+.com-content-category-blog__item .icons a {
+	padding: 6px 12px;
+	border: 1px solid var(--color-red);
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.edit.item-page{
+  @extend .container;
+  margin-top: 160px;
+
+  fieldset{
+    padding: 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    fieldset{
+      padding: 30px 15px;
+    }
+  }
+}
+
+#com-content-form{
+  /*
+  button[aria-controls="attrib-fields-1"],
+  button[aria-controls="attrib-fields-3"],
+  button[aria-controls="attrib-fields-5"]{
+    display: none;
+  }
+  */
+  > div[role="tablist"]{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
+  button[role="tab"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 6px 12px;
+    border-radius: 7px !important;
+  }
+  button[role="tab"][aria-expanded="true"]{
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 7px !important;
+  }
+
+  button[role="region"] {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    padding: 6px 12px;
+    border-radius: 7px !important;
+  }
+  button[role="region"][aria-expanded="true"]{
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 7px !important;
+  }
+
+  .wf-editor-tabs button::after{
+    display: none;
+  }
+
+  .control-group{
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #222;
+  }
+  .control-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-red);
+    text-transform: uppercase;
+  }
+
+  .form-check-inline {
+    padding: 0;
+  }
+
+  .choices[data-type*="select-one"] .choices__button_joomla{
+    display: none;
+  }
+  .form-check-input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    padding: 0;
+    float: none;
+  }
+  .btn-check:checked + .btn, 
+  .btn.active, 
+  .btn.show, 
+  .btn:first-child:active, 
+  :not(.btn-check) + .btn:active{
+    background-color: #222;
+  }
+}
+
+.buttons-bottom{
+  padding: 10px 30px;
+  @include media-breakpoint-down(md) {
+    padding: 10px 15px;
+  }
+  button{
+    margin-right: 4px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    padding: 6px 12px !important;
+  }  
+}

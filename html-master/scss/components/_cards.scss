@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-bottom: 65px;
+
+  * {
+    color: var(--color-white);
+  }
+  a, a:hover, a:focus {
+    color: var(--color-white);
+  }
+  .item-content {
+    padding: 15px;
+  }
+  .item-image img {
+    width: 100%;
+  }
+  &.img-only .bg-image{
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  .btn{
+    @extend .light;
+  }
+  .readmore {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    margin: 0;
+    .btn {
+      margin: 0;
+    }
+  }
+}

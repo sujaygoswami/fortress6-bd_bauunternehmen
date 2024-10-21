@@ -1,0 +1,19 @@
+#media-query::after{
+  content: 'xs';
+  @include media-breakpoint-up(sm) { content: 'sm'; }
+	@include media-breakpoint-up(md) { content: 'md'; }
+  @include media-breakpoint-up(lg) { content: 'lg'; }
+  @include media-breakpoint-up(xl) { content: 'xl'; }
+  @include media-breakpoint-up(xxl) { content: 'xxl'; }
+}
+
+#media-query::after{
+	display: block;
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	z-index: 9999999;
+	padding: 15px;
+	background: #ddd;
+}

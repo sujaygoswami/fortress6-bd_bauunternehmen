@@ -61,16 +61,49 @@
     display: inline-block !important;
     visibility: visible !important
 }
+
 // 
 
+
+
+// basic
+.set-back {
+    &>img {
+        display: none;
+    }
+}
+
+// basic
+
 // galerie
-.galerie{
-    .the-carousal{
-        .slick-slide{
+.galerie {
+    .the-carousal {
+        .slick-slide {
             margin: 2px;
         }
 
-        
+
     }
 }
+
 // galerie
+
+
+
+div.js-flyout {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 15px;
+    transform: translate(0, 0);
+}
+
+.js-flyout {
+    width: 450px !important;
+    height: 730px !important;
+}
+
+#fout6718a26456dd1 div.js-flyout-content {
+    height: 100%;
+    overflow: hidden
+}

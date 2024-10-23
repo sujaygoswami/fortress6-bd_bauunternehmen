@@ -411,6 +411,16 @@ matchMedia.add("(min-width: 980px)", () => {
 jQuery(document).ready(function(){
 
 
+  // set back
+
+  jQuery('.set-back').each(function () {
+
+    var SETBACK = jQuery(this).find('img:not(.no-set)').attr('src');
+    jQuery(this).css('background-image', 'url(' + SETBACK + ')');
+
+  });
+
+
   // navbar toggler
   jQuery('.hamburger').on('click', function () {
     jQuery('body').toggleClass('no-scroll');

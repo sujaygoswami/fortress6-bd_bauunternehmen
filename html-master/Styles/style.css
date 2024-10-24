@@ -2945,6 +2945,13 @@ body {
   display: inline-block !important;
   visibility: visible !important; }
 
+body {
+  overflow-y: hidden; }
+  body.no-scroll {
+    overflow: hidden !important; }
+  body.loaded {
+    overflow-y: auto; }
+
 .set-back > img {
   display: none; }
 

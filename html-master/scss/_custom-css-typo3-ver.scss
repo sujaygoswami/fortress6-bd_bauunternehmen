@@ -67,6 +67,15 @@
 
 
 // basic
+body{
+    overflow-y: hidden;
+    &.no-scroll{
+        overflow: hidden !important;
+    }
+    &.loaded{
+        overflow-y: auto;
+    }
+}
 .set-back {
     &>img {
         display: none;

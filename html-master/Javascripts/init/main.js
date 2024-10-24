@@ -1,7 +1,5 @@
 (function ($) {
-  $(document).ready(function () {
-    $("body").addClass("loaded");
-  });
+ 
 
   /*
     Slick Slider
@@ -411,6 +409,21 @@ matchMedia.add("(min-width: 980px)", () => {
 jQuery(document).ready(function(){
 
 
+  // flayout
+  $(".js-fo-close").click(function () {
+    $(this).parent().addClass("fadeOut");
+    $(this).parent().removeClass("fadeIn");
+    setTimeout(function () {
+        $(".js-flyout").hide();
+        sessionStorage.setItem("js-flyout", 1);
+    }, 1000);
+});
+var jsFlyoutState = sessionStorage.getItem("js-flyout");
+if (jsFlyoutState && "yes" == "yes") {
+    $(".js-flyout").remove();
+}
+
+
   // set back
 
   jQuery('.set-back').each(function () {
@@ -462,5 +475,11 @@ jQuery(document).ready(function(){
   // // });
   
  
+});
+
+jQuery(window).on('load', function(){
+
+  jQuery("body").addClass("loaded");
+
 });
 // new js after localise
